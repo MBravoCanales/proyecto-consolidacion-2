@@ -202,17 +202,20 @@ a {
 
 .seccionContacto {
   width: 100%;
-  min-height: 800px;
+  height: auto; /* Cambiado para adaptarse al contenido */
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  padding: 20px 0; /* Agregado para separación vertical */
 }
 
 .divContacto {
   width: 100%;
+  height: auto; /* Cambiado para adaptarse al contenido */
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
 }
 
 .divImg {
@@ -223,52 +226,44 @@ a {
 }
 
 .contenedorFormulario {
+  margin: 20px 0; /* Reducción de márgenes */
+  font-size: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 form {
   width: 80%;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1%;
+  padding: 20px; /* Agregado para mayor espacio interno */
 }
 
 form input,
-form textarea,
-form .btnFormulario {
+textarea,
+.btnFormulario {
   display: block;
-  width: 100%;
-  height: 40px;
-  margin: 10px 0;
-  padding: 10px;
-  border: solid 1px #ccc;
+  width: 100%; /* Ajustado al 100% */
+  height: 35px;
+  margin: 10px 0; /* Espaciado entre campos */
+  padding: 0px 10px; /* Ajustado para que se vea mejor */
+  border: solid 1px rgb(56, 56, 56);
   border-radius: 5px;
-  font-size: 16px;
 }
 
 form textarea {
-  height: 150px;
+  height: 200px;
 }
 
 .btnFormulario {
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  cursor: pointer; /* Cambiado para mejorar la experiencia del usuario */
 }
 
-.btnFormulario:hover {
-  background-color: #0056b3;
-}
 
 /* Contenido footer */
 
@@ -347,24 +342,8 @@ footer {
   .galeriaProyectos img {
     margin-bottom: 20px;
   }
-  /*Formulario*/
-  .contenedorFormulario {
-    margin: 20px 0;
-  }
-
-  form {
-    width: 90%;
-  }
-
-  form input,
-  form textarea {
-    width: 100%;
-  }
-
-  .divImg {
-    display: none; /* Ocultar imagen en pantallas muy pequeñas */
-  }
   
+
   /*Footer*/
   .contenidoFooter p {
     font-size: 14px; /* Ajusta el tamaño del texto en pantallas pequeñas */
