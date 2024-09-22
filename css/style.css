@@ -137,38 +137,34 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 50px 0;
 }
 
-.tituloHabilidades {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin: 50px;
-  font-size: 30px;
+.tituloHabilidades h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
 .cuerpoHabilidades {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-}
-
-.cuerpoHabilidades div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-  height: 200px;
-  font-size: 30px;
-  margin: 50px;
-}
-
-.divHabilidad i {
-  font-size: 100px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .divHabilidad {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.divHabilidad i {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.divHabilidad p {
+  font-size: 1.25rem;
 }
 
 /* Seccion proyectos */
@@ -344,5 +340,13 @@ form textarea {
 
   .contenedor p {
     font-size: 1.2rem;
+  }
+
+  /*Habilidades*/
+  .divHabilidad i {
+    font-size: 5rem;
+  }
+  .divHabilidad p {
+    font-size: 1.5rem;
   }
 }
