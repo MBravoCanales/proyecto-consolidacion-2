@@ -198,33 +198,25 @@ a {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .galeriaProyectos img {
-    margin-bottom: 20px;
-  }
-}
-
 
 /* formulario contacto */
 
 .seccionContacto {
   width: 100%;
-  height: 800px;
+  min-height: 800px;
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
 
 .divContacto {
   width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
 .divImg {
-  width: 50%;
   height: 100%;
   background-image: url("https://img.freepik.com/vector-gratis/particula-tecnologia-abstracta-realista-fondo_23-2148431735.jpg?w=1380&t=st=1725230991~exp=1725231591~hmac=5e44355b518d605da9821621f4e30811727e0a35243547a5ff4673a9566a7106");
   background-position: center;
@@ -232,47 +224,53 @@ a {
 }
 
 .contenedorFormulario {
-  width: 50%;
-  height: 100%;
-  margin: 100px 0 60px 0;
-  font-size: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 form {
   width: 80%;
-  height: 100%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background-color: white;
-  border-radius: 1%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 form input,
-textarea,
-.btnFormulario {
+form textarea,
+form .btnFormulario {
   display: block;
-  width: 70%;
-  height: 35px;
-  margin: auto;
-  padding: 0px 30px;
-  border: solid 1px rgb(56, 56, 56);
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  padding: 10px;
+  border: solid 1px #ccc;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 form textarea {
-  height: 200px;
+  height: 150px;
 }
 
-.seccionContacto img {
-  width: 50%;
-  height: auto;
-  object-fit: cover;
+.btnFormulario {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
+
+.btnFormulario:hover {
+  background-color: #0056b3;
+}
+
 
 /* Contenido footer */
 
@@ -335,5 +333,28 @@ form textarea {
   }
   .divHabilidad p {
     font-size: 1.5rem;
+  }
+
+  /*Proyectos*/
+  .galeriaProyectos img {
+    margin-bottom: 20px;
+  }
+
+  /*Contacto*/
+  .contenedorFormulario {
+    margin: 20px 0;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  .divImg {
+    display: none; /* Ocultar imagen en pantallas muy pequeñas */
   }
 }
