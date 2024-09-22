@@ -171,52 +171,39 @@ a {
 
 .proyectosArticle {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .tituloProyectos {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin: 50px;
-  font-size: 40px;
+  font-size: 2.5rem;
+  margin: 50px 0;
 }
 
 .galeriaProyectos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  width: 80%;
+  width: 100%;
 }
 
 .galeriaProyectos img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.galeriaProyectos ul {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.galeriaProyectos img:hover {
+  transform: scale(1.05);
 }
 
-.galeriaProyectos ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-  height: 300px;
-  padding: 20px;
+@media (max-width: 768px) {
+  .galeriaProyectos img {
+    margin-bottom: 20px;
+  }
 }
+
 
 /* formulario contacto */
 
