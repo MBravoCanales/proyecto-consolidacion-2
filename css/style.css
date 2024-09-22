@@ -57,8 +57,6 @@ a {
   font-size: 2rem;
 }
 
-
-
 /* Seccion acerca de mi */
 
 .acercaDeMiArticle {
@@ -94,8 +92,6 @@ a {
   font-size: 1.25rem;
 }
 
-
-
 /* Seccion Educacion*/
 
 .educacionArticle {
@@ -106,30 +102,31 @@ a {
   justify-content: center;
 }
 
-.tituloeEducacion {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin: 50px;
-  font-size: 30px;
+.tituloEducacion h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
 .cuerpoEducacion {
-  width: 80%;
+  width: 100%;
 }
 
 .contenedorEducacion {
-  width: 100%;
-  display: flex;
+  margin-bottom: 50px;
 }
 
 .contenedor {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 50px 20px;
+  padding: 30px 20px;
+}
+
+.contenedor h3 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+
+.contenedor p {
+  font-size: 1rem;
+  margin-bottom: 15px;
 }
 
 /*Seccion habilidades */
@@ -311,10 +308,9 @@ form textarea {
 /*Media queries*/
 
 @media (min-width: 768px) {
-
   /* Header */
   .header img {
-    max-width: 200px; 
+    max-width: 200px;
   }
   .header h1 {
     font-size: 3.5rem;
@@ -325,7 +321,7 @@ form textarea {
   .iconosSociales i {
     font-size: 2.5rem;
   }
-  
+
   /*A cerca de mi*/
   .tituloAcercaDeMi {
     margin: 50px 0;
@@ -340,6 +336,13 @@ form textarea {
   .resumenAcercaDeMi p {
     font-size: 1.5rem;
   }
+
+  /*Educacion*/
+  .contenedor h3 {
+    font-size: 2rem;
+  }
+
+  .contenedor p {
+    font-size: 1.2rem;
+  }
 }
-
-
