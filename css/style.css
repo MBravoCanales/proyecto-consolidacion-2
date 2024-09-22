@@ -14,13 +14,13 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom,  #5170ff, #cf70ab );
+  background: linear-gradient(to bottom, #5170ff, #cf70ab);
   color: #ffbd59;
 }
 
-a{
+a {
   text-decoration: none;
-  color: #ffbd59
+  color: #ffbd59;
 }
 
 /* Header con todo de perfil*/
@@ -57,20 +57,7 @@ a{
   font-size: 2rem;
 }
 
-@media (min-width: 768px) {
-  .header img {
-    max-width: 200px; /* Aumenta el tamaño de la imagen en pantallas medianas */
-  }
-  .header h1 {
-    font-size: 3.5rem;
-  }
-  .header p {
-    font-size: 1.5rem;
-  }
-  .iconosSociales i {
-    font-size: 2.5rem;
-  }
-}
+
 
 /* Seccion acerca de mi */
 
@@ -80,45 +67,34 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  padding: 50px 0;
 }
 
-.tituloAcercaDeMi {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin: 100px;
-  font-size: 30px; 
+.tituloAcercaDeMi h2 {
+  font-size: 2rem; /* Ajuste de tamaño */
+  margin-bottom: 30px;
 }
 
 .contenido {
-  display: flex;
-  width: 80%;
-  margin-bottom: 200px;
-}
-
-.cuerpoAcercaDeMi {
-  width: 30%;
-  margin-right: 50px;
+  width: 90%;
+  margin-bottom: 100px;
 }
 
 .cuerpoAcercaDeMi ul li {
-  list-style: none;
-  margin: 15px;
-  font-size: 16px;
-}
-
-.resumenAcercaDeMi {
-  width: 70%;
+  font-size: 1rem;
+  margin: 15px 0;
 }
 
 .resumenAcercaDeMi h2 {
-  font-size: 35px;
-  margin-bottom: 40px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
+
 .resumenAcercaDeMi p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
+
+
 
 /* Seccion Educacion*/
 
@@ -190,7 +166,7 @@ a{
   margin: 50px;
 }
 
-.divHabilidad i{
+.divHabilidad i {
   font-size: 100px;
 }
 
@@ -298,7 +274,7 @@ form {
 
 form input,
 textarea,
-.btnFormulario{
+.btnFormulario {
   display: block;
   width: 70%;
   height: 35px;
@@ -308,18 +284,15 @@ textarea,
   border-radius: 5px;
 }
 
-form textarea { 
+form textarea {
   height: 200px;
 }
-
-
 
 .seccionContacto img {
   width: 50%;
   height: auto;
   object-fit: cover;
 }
-
 
 /* Contenido footer */
 
@@ -334,4 +307,39 @@ form textarea {
 .contenidoFooter p {
   margin: 200px 500px;
 }
+
+/*Media queries*/
+
+@media (min-width: 768px) {
+
+  /* Header */
+  .header img {
+    max-width: 200px; 
+  }
+  .header h1 {
+    font-size: 3.5rem;
+  }
+  .header p {
+    font-size: 1.5rem;
+  }
+  .iconosSociales i {
+    font-size: 2.5rem;
+  }
+  
+  /*A cerca de mi*/
+  .tituloAcercaDeMi {
+    margin: 50px 0;
+  }
+  .contenido {
+    flex-direction: row;
+    margin-bottom: 200px;
+  }
+  .resumenAcercaDeMi h2 {
+    font-size: 3rem;
+  }
+  .resumenAcercaDeMi p {
+    font-size: 1.5rem;
+  }
+}
+
 
