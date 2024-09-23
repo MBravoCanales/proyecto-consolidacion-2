@@ -1,6 +1,8 @@
 :root {
   --primary-color: #dfdfdf;
   --font-primary: "Handjet", Arial, serif;
+  --bc-primary-color: #6b84f1;
+  --bc-secondary-color: #dbb488;
 }
 
 * {
@@ -19,7 +21,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #5170ff, #cf70ab);
+  background: linear-gradient(to bottom, var(--bc-primary-color), var(--bc-secondary-color));
   color: var(--primary-color);
 }
 
@@ -252,7 +254,7 @@ a {
   background-image: url("../img/Hands.webp");
   background-position: center;
   background-size: cover;
-  box-shadow: 0 0 20px 10px rgba(140, 35, 172, 0.822);
+  box-shadow: 0 0 20px 10px var(--bc-secondary-color);
   border-radius: 10px;
 }
 
