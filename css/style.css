@@ -63,7 +63,7 @@ a {
   overflow: hidden;
   border-right: 2px solid #ffbd59;
   display: inline-block;
-  animation: typing 8s steps(150, end), blink-caret 0.75s step-end infinite;
+  animation: typing 3s steps(50, end), blink-caret 0.75s step-end infinite;
   width: 0;
   animation-fill-mode: forwards; 
 }
