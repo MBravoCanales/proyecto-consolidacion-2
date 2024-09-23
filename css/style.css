@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #dfdfdf;
+  --font-primary: "Handjet", Arial, serif;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,18 +14,18 @@ html {
 }
 
 body {
-  font-family: "Space Mono", Arial, serif;
+  font-family: var(--font-primary);
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom, #5170ff, #cf70ab);
-  color: #ffbd59;
+  color: var(--primary-color);
 }
 
 a {
   text-decoration: none;
-  color: #ffbd59;
+  color: var(--primary-color);
 }
 
 /* Header con todo de perfil*/
@@ -43,7 +48,7 @@ a {
 }
 
 .header h1 {
-  font-family: "Kaushan Script", cursive;
+  font-family: var(--font-primary), cursive;
   margin-bottom: 15px;
   font-size: 2.5rem; /* Ajusta el tamaño del texto automáticamente */
 }
@@ -58,10 +63,10 @@ a {
 }
 
 .lead {
-  font-family: monospace;
+  font-family: var(--font-primary);
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #ffbd59;
+  border-right: 2px solid var(--primary-color);
   display: inline-block;
   animation: typing 3s steps(50, end), blink-caret 0.75s step-end infinite;
   width: 0;
@@ -77,7 +82,7 @@ a {
 /* Animación de parpadeo del cursor */
 @keyframes blink-caret {
   from, to { border-color: transparent; }
-  to { border-color: #ffbd59; }
+  to { border-color: var(--primary-color); }
 }
 
 
