@@ -57,6 +57,30 @@ a {
   font-size: 2rem;
 }
 
+.lead {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ffbd59;
+  display: inline-block;
+  animation: typing 8s steps(150, end), blink-caret 0.75s step-end infinite;
+  width: 0;
+  animation-fill-mode: forwards; 
+}
+
+/* Animación de escritura */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Animación de parpadeo del cursor */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  to { border-color: #ffbd59; }
+}
+
+
 /* Seccion acerca de mi */
 
 .acercaDeMiArticle {
@@ -220,9 +244,11 @@ a {
 
 .divImg {
   height: 100%;
-  background-image: url("https://img.freepik.com/vector-gratis/particula-tecnologia-abstracta-realista-fondo_23-2148431735.jpg?w=1380&t=st=1725230991~exp=1725231591~hmac=5e44355b518d605da9821621f4e30811727e0a35243547a5ff4673a9566a7106");
+  background-image: url("../img/Hands.webp");
   background-position: center;
   background-size: cover;
+  box-shadow: 0 0 20px 10px rgba(140, 35, 172, 0.822);
+  border-radius: 10px;
 }
 
 .contenedorFormulario {
